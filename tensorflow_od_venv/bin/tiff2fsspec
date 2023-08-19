@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /mnt/c/Users/szcze/Desktop/cs50/projekty/python/car_plates_recognition_project/car_plates_recognition_project/tensorflow_od_venv/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from tifffile.tiff2fsspec import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
